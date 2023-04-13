@@ -1,173 +1,267 @@
 @keyframes slide {
-	0% { transform: translateX(0); }
-	10% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(0);
+  }
 
-	15% { transform: translateX(-100%); }
-	30% { transform: translateX(-100%); }
+  15% {
+    transform: translateX(-100%);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
 
-	35% { transform: translateX(-200%); }
-	50% { transform: translateX(-200%); }
+  35% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
 
-	55% { transform: translateX(-300%); }
-	70% { transform: translateX(-300%); }
+  55% {
+    transform: translateX(-300%);
+  }
+  70% {
+    transform: translateX(-300%);
+  }
 
-	75% { transform: translateX(-400%); }
-	90% { transform: translateX(-400%); }
+  75% {
+    transform: translateX(-400%);
+  }
+  90% {
+    transform: translateX(-400%);
+  }
 
-	95% { transform: translateX(-500%); }
-	100% { transform: translateX(-500%); }
+  95% {
+    transform: translateX(-500%);
+  }
+  100% {
+    transform: translateX(-500%);
+  }
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-	font-family: sans-serif;
+  font-family: sans-serif;
+  background-color: #EFE5FF;
 }
 
 .wrapper {
-	max-width: 1850px;
-	margin: 0 auto;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  bottom: 20px;
+	display: inline-block;
 }
 
 .slider {
-	position: relative;
+  position: relative;
+  background-color: #c8a2c8;
 }
 
 .slides {
-	position: relative;
-	display: flex;
-	overflow: hidden;
+  position: relative;
+  display: flex;
+  overflow: hidden;
 }
 
 .slide {
-	width: 100vw;
-	flex-shrink: 0;
-	animation-name: slide;
-	animation-duration: 20s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
+  width: 100vw;
+  flex-shrink: 0;
+  animation-name: slide;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .slides:hover .slide {
-	animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .slide img {
-	width: 100%;
-	vertical-align: top;
+  width: 100%;
+  vertical-align: top;
 }
 
 .slide a {
-	width: 100%;
-	display: inline-block;
-	position: relative;
+  width: 100%;
+  display: inline-block;
+  position: relative;
 }
 
 .caption {
-	color: white;
-	text-shadow: 1px 1px black;
-	font-size: 8vw;
-	position: absolute;
-	bottom: 8vw;
-	right: 4vw;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 8vw;
+  position: absolute;
+  bottom: 8vw;
+  right: 4vw;
+  display: inline;
 }
 
 .slide:target {
-	animation-name: none;
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 50;
+  animation-name: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
 }
 
 .slider-controler {
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	text-align: center;
-	padding: 5px;
-	background-color: rgba(0,0,0,0.5);
-	z-index: 100;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 100;
 }
 
 .slider-controler li {
-	margin: 0 0.5rem;
-	display: inline-block;
-	vertical-align: top;
+  margin: 0 0.5rem;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .slider-controler a {
-	display: inline-block;
-	vertical-align: top;
-	text-decoration: none;
-	color: white;
-	font-size: 1.5rem;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 1200px) {
-	.slide {
-		width: 1850px;
-	}
+  .slide {
+    width: 1850px;
+  }
 
-	.caption {
-		font-size: 96px;
-		bottom: 96px;
-		right: 50px;
-	}
+  .caption {
+    font-size: 96px;
+    bottom: 96px;
+    right: 50px;
+  }
 }
 
-#caption{
-	display: inline-block;
-	padding-top: 30px;
-	height:750px;
-	width:1850px;
-	padding-right:950px;
+#opciones{
+	background-color: #FFF;
+	position: relative;
+	bottom: 7.5px;
 }
 
-strong{
-
-	padding-left: 200px;
-	margin-left: 60px;
+#mini_iconos {
+  background-color: rgba(255, 255, 255, 0);
+  outline: none;
+  text-decoration: none;
+  padding: 50px;
+  color: #000000;
+  font-family: "Effra", Sans-serif;
+  font-size: 22px;
+  position: relative;
+  left: 580px;
+  bottom:25px;
+  font-weight: 1000;
+  width: 90px;
+  height: 90px;
+  transition: all 0.4s ease;
+   
+}
+#mini_iconos:link {
+  color: #c8a2c8;
+  text-decoration: none;
+  size: 100px;
+}
+#mini_iconos:visited {
+  text-decoration: none;
+}
+#mini_iconos:hover {
+  border-bottom: 0px solid;
+  background: #c8a2c800;
+  text-decoration: none;
+  color: #c8a2c8;
 }
 
-#icono{
-	margin-left:100px;
+
+
+#mini_iconos:active {
+  background: #c8a2c800;
+  color: #c8a2c8;
+  text-decoration: none;
 }
 
-#mini_iconos{
-	padding-left: px;
+#icono {
+  position: relative;
+  left: 150px;
 }
 
-a {
-	outline: none;
-	text-decoration: none;
-	padding: 2px 1px 0;
-	color: #C8A2C8;
-  }
-  
-  a:link {
-	color:#C8A2C8 ;
-	text-decoration:none;
-  }
-  
-  a:visited {
-	color: black;
-	text-decoration:none;
-  }
-  
-  a:hover {
-	border-bottom: 0px solid;
-	background: #C8A2C8;
-	text-decoration:none;
-  }
-  
-  a:active {
-	background: #C8A2C8;
-	color: #C8A2C8;
-	text-decoration:none;
-  }
+#IMG_Opc{
+	background-color:#EFE5FF ;
+	float: inline-end;
+	position: relative;
+	bottom: 40px;
+}
+
+
+
+#tiendas{
+	position: relative;
+	text-align: center;
+	font-size: 45px;
+	font-family: "Roboto", Sans-serif;
+	bottom: 5px;
+	top: 15px;
+	font-weight: 600;
+	color: #F67303;
+}
+
+#img_opc2{
+	height: 240px;
+	width: 450px;
+	padding:10px;
+	transition: all 0.8s ease;
+}
+#img_opc2:hover{
+	transition: all 0.6 ease;
+	filter: brightness(70%);
+	transform: scale(1.05); 
+}
+.mover{
+	position: relative;
+	left: 30px;
+	
+
+}
+.contenedor{
+    position:relative;
+    display: inline-block;
+    text-align: center;
+	transition: all 0.8s ease;
+}
+.contenedor:hover{
+	transition: all 0.6 ease;
+	filter: brightness(70%);
+	transform: scale(1.05); 
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-family: "Roboto", Sans-serif;
+	font-size: 30px;
+	color:#FFF;
+	font-weight: 100;
+	
+}

@@ -52,7 +52,8 @@ html {
 
 body {
   font-family: sans-serif;
-  background-color: #EFE5FF;
+  background-color: #ffffff;
+  
 }
 
 .wrapper {
@@ -61,11 +62,12 @@ body {
   position: relative;
   bottom: 20px;
 	display: inline-block;
+  
 }
 
 .slider {
   position: relative;
-  background-color: #c8a2c8;
+  background-color: #c8a2c800;
 }
 
 .slides {
@@ -87,9 +89,10 @@ body {
   animation-play-state: paused;
 }
 
-.slide img {
-  width: 100%;
+.slide.img {
   vertical-align: top;
+  min-width: 1850px;
+  min-height: 750px;
 }
 
 .slide a {
@@ -106,6 +109,8 @@ body {
   bottom: 8vw;
   right: 4vw;
   display: inline;
+  min-width: 1850px;
+  min-height: 750;
 }
 
 .slide:target {
@@ -118,14 +123,26 @@ body {
   z-index: 50;
 }
 
+
+
+.slider-controler:hover{
+  color: #000000;
+  filter: brightness(80%);
+}
+
+.slider-controler:active {
+  color: rgb(0, 0, 0);
+}
+
+
 .slider-controler {
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   bottom: 0;
   text-align: center;
   padding: 0px;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(0, 0, 0, 0);
   z-index: 100;
 }
 
@@ -139,11 +156,11 @@ body {
   display: inline-block;
   vertical-align: top;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 1.5rem;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1850px ) {
   .slide {
     width: 1850px;
   }
@@ -152,6 +169,7 @@ body {
     font-size: 96px;
     bottom: 96px;
     right: 50px;
+    
   }
 }
 
@@ -159,11 +177,11 @@ body {
 	background-color: #FFF;
 	position: relative;
 	bottom: 7.5px;
+
 }
 
 #mini_iconos {
   background-color: rgba(255, 255, 255, 0);
-  outline: none;
   text-decoration: none;
   padding: 50px;
   color: #000000;
@@ -171,7 +189,7 @@ body {
   font-size: 22px;
   position: relative;
   left: 580px;
-  bottom:25px;
+  bottom:20px;
   font-weight: 1000;
   width: 90px;
   height: 90px;
@@ -191,10 +209,9 @@ body {
   background: #c8a2c800;
   text-decoration: none;
   color: #c8a2c8;
+  animation-direction: center;
+  zoom: 105%;
 }
-
-
-
 #mini_iconos:active {
   background: #c8a2c800;
   color: #c8a2c8;
@@ -214,21 +231,22 @@ body {
 }
 
 
-
 #tiendas{
 	position: relative;
-	text-align: center;
-	font-size: 45px;
+	text-align: left;
+	font-size: 25px;
 	font-family: "Roboto", Sans-serif;
 	bottom: 5px;
+  left: 30px;
 	top: 15px;
 	font-weight: 600;
-	color: #F67303;
+	color: #690083;
+  
 }
 
 #img_opc2{
-	height: 240px;
-	width: 450px;
+	height: 350px;
+	width: 400px;
 	padding:10px;
 	transition: all 0.8s ease;
 }
@@ -240,8 +258,6 @@ body {
 .mover{
 	position: relative;
 	left: 30px;
-	
-
 }
 .contenedor{
     position:relative;
@@ -263,5 +279,109 @@ body {
 	font-size: 30px;
 	color:#FFF;
 	font-weight: 100;
-	
 }
+
+.UBI{
+  padding-top: 20px;
+  padding-left: 20px;
+  color: #690083;
+  font-size: 25px;
+  font-family: "Roboto", Sans-serif;
+}
+#pan_mov{
+  position: relative;
+  left: 30px;
+}
+
+#color_panel{
+  background-color: #4054B2;
+  position: relative;
+  text-align: center;
+  color: #FFF;
+  padding-top:10px ;
+  height: 1000px;
+}
+
+.valpo_footer{
+  position: relative;
+  display: inline-block;
+  right: 100px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  bottom: 413px;
+}
+
+.viña_footer{
+  position: relative;
+  display: inline-block;
+  right: 68px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  bottom: 413px;
+}
+.concon_footer{
+  position: relative;
+  font-size: 20px;
+  display: inline-block;
+  font-weight:700;
+  left: 10px;
+  text-align: center;
+  bottom: 413px;
+}
+.peñab_footer{
+  position: relative;
+  display: inline-block;
+  left: 80px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  
+}
+.background{
+  background: #F67303 ;
+  border-radius: 13px;
+  height: 40px;
+  width: 320px;
+  margin-left: 4  0px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.direc{
+  position: relative;
+  top: 150px;
+  right: 1050px;
+}
+.mapa{
+  position: relative;
+  top: 200px;
+  right: 1050px;
+}
+
+.horario{
+  right: 500px;
+  position: relative;
+  text-align: left;
+  bottom: 100px;
+}
+
+#whi{
+  color: #ffffff;
+}
+#centrarr{
+  text-align: center;
+  font-weight: 700;
+}
+
+.contacto{
+  position: relative;
+  bottom: 350px;
+  left: 1250px;
+  font-size: 19px;
+  font-weight: 700;
+  text-align: left;
+}
+
+

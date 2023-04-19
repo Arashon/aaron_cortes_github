@@ -53,6 +53,8 @@ html {
 body {
   font-family: sans-serif;
   background-color: #ffffff;
+  width: 100%;
+  overflow-x: hidden;
   
 }
 
@@ -293,6 +295,9 @@ body {
   left: 30px;
 }
 
+
+
+
 #color_panel{
   background-color: #4054B2;
   position: relative;
@@ -383,5 +388,4 @@ body {
   font-weight: 700;
   text-align: left;
 }
-
 
